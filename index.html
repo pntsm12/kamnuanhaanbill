@@ -2,186 +2,153 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>หารบิล คำนวณค่าอาหาร — แบ่งจ่ายเท่ากัน</title>
 <meta name="description" content="หารบิลออนไลน์ฟรี คำนวณค่าอาหารหารเท่ากัน หารตามสัดส่วน มีของใครของมันก็คำนวณได้ ใส่ทิป บวก VAT รู้ทันทีว่าใครจ่ายเท่าไหร่">
-<meta name="keywords" content="หารบิล, คำนวณค่าอาหาร, แบ่งบิล, ทิป, tip, หารเท่ากัน, 50/50">
-<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://kamnuan.net/kamnuanhaanbill/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="หารบิล คำนวณค่าอาหาร — แบ่งจ่ายเท่ากัน">
+<meta property="og:title" content="หารบิล คำนวณค่าอาหาร">
 <meta property="og:description" content="หารบิลออนไลน์ฟรี หารเท่ากัน หารตามสัดส่วน มีของใครของมันก็คำนวณได้">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://kamnuan.net/kamnuanhaanbill/">
 <meta property="og:locale" content="th_TH">
-<meta property="og:site_name" content="คำนวณ">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-  {"@type":"WebApplication","name":"หารบิล","url":"https://kamnuan.net/kamnuanhaanbill/","description":"หารบิลออนไลน์ฟรี คำนวณค่าอาหารหารเท่ากัน หารตามสัดส่วน","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th","isAccessibleForFree":true},
-  {"@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"ควรให้ทิปเท่าไหร่ในไทย","acceptedAnswer":{"@type":"Answer","text":"ในไทยไม่มีมาตรฐานตายตัว แต่โดยทั่วไปร้านอาหารทั่วไป 10% ร้านระดับกลางถึงสูง 15-20% ถ้าร้านคิด Service Charge แล้วก็ไม่จำเป็นต้องให้ทิปเพิ่ม"}},
-    {"@type":"Question","name":"ร้านอาหารในไทยคิด VAT ไหม","acceptedAnswer":{"@type":"Answer","text":"ร้านอาหารที่มีรายได้เกิน 1.8 ล้านบาทต่อปีต้องจดทะเบียน VAT และคิด 7% ร้านเล็กหรือรถเข็นส่วนใหญ่ไม่คิด VAT"}},
-    {"@type":"Question","name":"หารแบบ 50/50 หรือ 60/40 คืออะไร","acceptedAnswer":{"@type":"Answer","text":"หารตามสัดส่วนคือการแบ่งบิลไม่เท่ากัน เช่น 60/40 หมายความว่าคนแรกออก 60% คนที่สองออก 40% ใช้บ่อยในกรณีที่รู้สึกว่าคนนึงกินมากกว่าหรือมีกำลังจ่ายมากกว่า"}}
-  ]}
-]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"หารบิล","url":"https://kamnuan.net/kamnuanhaanbill/","description":"หารบิลออนไลน์ฟรี คำนวณค่าอาหารหารเท่ากัน หารตามสัดส่วน","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"กินไม่เท่ากัน ต้องหารเท่ากันไหม","acceptedAnswer":{"@type":"Answer","text":"ไม่จำเป็น ถ้ารู้สึกว่าไม่ยุติธรรมก็ใช้โหมดหารตามสัดส่วนได้เลย หรือถ้าใครสั่งของเพิ่มเองก็เปิดของใครของมัน แล้วใส่ยอดที่แต่ละคนสั่งเพิ่มเอง ที่เหลือค่อยหารกัน"}},{"@type":"Question","name":"VAT ในบิลคืออะไร ต้องติ้กไหม","acceptedAnswer":{"@type":"Answer","text":"VAT คือภาษีมูลค่าเพิ่ม 7% ถ้ากรอกยอดจากบิลที่ถืออยู่ในมือ ส่วนใหญ่บวก VAT มาแล้ว ไม่ต้องติ้ก ติ้กเฉพาะกรณีที่รู้ราคาก่อน VAT แล้วอยากรู้ว่าจะต้องจ่ายเท่าไหร่รวม VAT"}},{"@type":"Question","name":"ร้านอาหารในไทยคิด VAT ไหม","acceptedAnswer":{"@type":"Answer","text":"ร้านอาหารที่มีรายได้เกิน 1.8 ล้านบาทต่อปีต้องจดทะเบียน VAT และคิด 7% ร้านเล็กหรือรถเข็นส่วนใหญ่ไม่คิด VAT"}},{"@type":"Question","name":"หารแบบ 50/50 หรือ 60/40 คืออะไร","acceptedAnswer":{"@type":"Answer","text":"หารตามสัดส่วนคือการแบ่งบิลไม่เท่ากัน เช่น 60/40 หมายความว่าคนแรกออก 60% คนที่สองออก 40% ใช้บ่อยในกรณีที่รู้สึกว่าคนนึงกินมากกว่าหรือมีกำลังจ่ายมากกว่า"}},{"@type":"Question","name":"ทำไมต้องปัดขึ้นเป็นหลักสิบ","acceptedAnswer":{"@type":"Answer","text":"การปัดขึ้นเป็นหลักสิบช่วยให้จ่ายเงินสดง่ายขึ้น ไม่ต้องหาเศษสตางค์มาทอน เช่น คนละ 287.50 บาท ปัดเป็น 290 บาท เพื่อนที่จ่ายมากกว่าเศษเล็กน้อยมักไม่ติดใจ"}}]}]}
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1063556443578237" crossorigin="anonymous"></script>
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;--s2:#ECEAE6;--b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);--t0:#18181A;--t1:#4A4946;--t2:#7A7872;--ink:#18181A;--inv:#FFFFFF;--r:8px;--r-lg:12px;}
-[data-theme="dark"]{--bg:#111110;--s0:#1C1C1A;--s1:#242422;--s2:#2C2B28;--b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);--t0:#EDEAE2;--t1:#A8A49C;--t2:#68655E;--ink:#EDEAE2;--inv:#111110;}
-:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
-:focus:not(:focus-visible){outline:none;}
-html{scroll-behavior:smooth;}
-body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
-header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}
-[data-theme="dark"] header{background:rgba(17,17,16,0.92);}
-.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
-.logo svg{width:30px;height:30px;display:block;flex-shrink:0;}
-.logo-t{display:flex;flex-direction:column;line-height:1.1;}
-.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}
-.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
-.hdr-right{display:flex;align-items:center;gap:8px;}
-.back-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid var(--b0);border-radius:20px;font-family:'Sarabun',sans-serif;font-size:12px;color:var(--t1);text-decoration:none;transition:border-color .15s,color .15s;white-space:nowrap;}
-.back-btn:hover{border-color:var(--b1);color:var(--t0);}
+html,body{background:#F7F7F5 !important;color:#18181A !important;-webkit-text-size-adjust:100%;}
+body{font-family:'Sarabun',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6;}
+:root{--bg:#F7F7F5;--s0:#FFFFFF;--s1:#EFEFEC;--b0:rgba(0,0,0,0.08);--b1:rgba(0,0,0,0.14);--t0:#18181A;--t1:#52504C;--t2:#96938C;--ink:#18181A;--inv:#FFFFFF;--r:10px;--r-lg:14px;}
+header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 16px;gap:10px;border-bottom:1px solid var(--b0);background:#F7F7F5 !important;}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex:1;min-width:0;}
+.logo-icon{width:30px;height:30px;flex-shrink:0;}
+.logo-t{display:flex;flex-direction:column;line-height:1.15;}
+.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:#18181A;}
+.logo-en{font-size:9px;font-weight:600;color:#96938C;letter-spacing:2px;}
+.back-btn{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 10px;border:1px solid var(--b0);border-radius:8px;background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:12px;font-weight:500;color:#52504C;text-decoration:none;white-space:nowrap;}
 .back-btn svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.dark-btn{width:32px;height:32px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;}
-.dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
-.dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.ad-bar{display:flex;justify-content:center;padding:8px 16px;background:var(--s1);border-bottom:1px solid var(--b0);}
-.page{max-width:600px;margin:0 auto;padding:28px 20px 72px;}
+.page{width:100%;max-width:600px;margin:0 auto;padding:20px 16px 80px;}
 .page-hd{margin-bottom:20px;}
-.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,4vw,30px);font-weight:700;color:var(--t0);line-height:1.2;letter-spacing:-.3px;}
-.page-hd p{margin-top:6px;font-size:14px;color:var(--t1);line-height:1.6;}
-/* mode tabs */
-.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:14px;}
-.m-tab{padding:9px 4px;border:1px solid var(--b0);border-radius:var(--r);background:var(--s0);font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);cursor:pointer;transition:all .15s;text-align:center;line-height:1.4;}
-.m-tab:hover{border-color:var(--b1);color:var(--t0);}
-.m-tab.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
-.card{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}
-.card-body{padding:16px 18px;}
-.field{margin-bottom:14px;}
-.lbl{display:block;font-size:13px;font-weight:600;color:var(--t1);margin-bottom:6px;}
-.lbl-sub{font-size:11px;color:var(--t2);font-weight:400;margin-left:4px;}
-.inp-row{display:flex;gap:0;}
-.inp-row input{flex:1;height:44px;padding:0 12px;border:1px solid var(--b0);border-right:none;border-radius:var(--r) 0 0 var(--r);background:var(--s0);color:var(--t0);font-family:'Sarabun',sans-serif;font-size:15px;transition:border-color .15s;}
-.inp-row input:focus{outline:none;border-color:#2563EB;}
-.inp-suf{height:44px;padding:0 12px;border:1px solid var(--b0);border-radius:0 var(--r) var(--r) 0;background:var(--s1);color:var(--t2);font-size:13px;display:flex;align-items:center;white-space:nowrap;}
-/* tip buttons */
-.tip-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px;}
+.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(20px,5vw,26px);font-weight:700;color:#18181A;line-height:1.2;}
+.page-hd p{margin-top:6px;font-size:14px;color:#52504C;}
 
-/* toggle */
-.toggle-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--b0);}
-.toggle-row:last-of-type{border-bottom:none;}
-.toggle-lbl{font-size:13px;color:var(--t1);}
-.toggle{position:relative;width:40px;height:22px;cursor:pointer;}
-.toggle input{opacity:0;width:0;height:0;}
-.toggle-track{position:absolute;inset:0;background:var(--s2);border-radius:11px;transition:background .2s;}
-.toggle input:checked + .toggle-track{background:var(--ink);}
-.toggle-thumb{position:absolute;width:16px;height:16px;top:3px;left:3px;background:var(--inv);border-radius:50%;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.2);}
+.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
+.m-tab{height:48px;padding:0 8px;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:600;color:#52504C;cursor:pointer;line-height:1.3;}
+.m-tab span{font-size:10px;font-weight:400;opacity:.7;display:block;margin-top:2px;}
+.m-tab.on{background:#18181A;border-color:#18181A;color:#FFFFFF;}
+
+.card{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:12px;width:100%;}
+.card-body{padding:16px;}
+.field{margin-bottom:16px;}
+.field:last-child{margin-bottom:0;}
+.lbl{display:block;font-size:13px;font-weight:600;color:#18181A;margin-bottom:7px;}
+.lbl-sub{font-size:11px;color:#96938C;font-weight:400;}
+.inp-row{display:flex;align-items:stretch;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;overflow:hidden;min-height:44px;}
+.inp-row:focus-within{border-color:#18181A;}
+.inp-row input{flex:1;min-width:0;width:0;height:44px;padding:0 10px;border:none;background:transparent;font-family:'Sarabun',sans-serif;font-size:16px;color:#18181A;outline:none;}
+.inp-suf{display:flex;align-items:center;padding:0 10px;background:#EFEFEC;font-size:13px;color:#96938C;white-space:nowrap;flex-shrink:0;border-left:1px solid var(--b0);}
+
+.toggle-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--b0);gap:12px;}
+.toggle-row:last-child{border-bottom:none;}
+.toggle-lbl{font-size:13px;color:#18181A;line-height:1.4;}
+.toggle{position:relative;display:inline-block;width:44px;height:26px;flex-shrink:0;}
+.toggle input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:1;}
+.toggle-track{position:absolute;inset:0;background:#EFEFEC;border:1px solid var(--b0);border-radius:13px;transition:background .2s;}
+.toggle-thumb{position:absolute;top:2px;left:2px;width:20px;height:20px;background:#FFFFFF;border-radius:50%;box-shadow:0 1px 2px rgba(0,0,0,0.2);transition:transform .2s;}
+.toggle input:checked ~ .toggle-track{background:#18181A;border-color:#18181A;}
 .toggle input:checked ~ .toggle-thumb{transform:translateX(18px);}
-/* สัดส่วน */
-.ratio-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
-.ratio-btn{padding:6px 14px;border:1px solid var(--b0);border-radius:20px;background:var(--s0);font-family:'Sarabun',sans-serif;font-size:12px;color:var(--t1);cursor:pointer;transition:all .15s;}
-.ratio-btn:hover{border-color:var(--b1);color:var(--t0);}
-.ratio-btn.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
-.ratio-inputs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
-.ratio-person{background:var(--s1);border-radius:var(--r);padding:12px 14px;}
-.ratio-person-name{font-size:12px;color:var(--t2);margin-bottom:6px;}
-.ratio-person-val{font-size:18px;font-weight:700;color:var(--t0);}
-.ratio-person-sub{font-size:11px;color:var(--t2);margin-top:2px;}
-/* ของใครของมัน */
-.own-item-wrap{margin-bottom:14px;}
-.own-item-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
-.own-item-lbl{font-size:13px;font-weight:600;color:var(--t1);}
-.add-person-btn{font-size:12px;color:var(--ink);background:none;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;font-weight:600;padding:0;}
-.person-row{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:nowrap;}
-.person-name-inp{width:35%;min-width:70px;flex-shrink:0;height:44px;padding:0 10px;border:1px solid var(--b0);border-radius:var(--r);background:var(--s0);color:var(--t0);font-family:'Sarabun',sans-serif;font-size:14px;}
-.person-name-inp:focus{outline:none;border-color:#2563EB;}
-.person-amt-inp{flex:1;height:44px;padding:0 10px;border:1px solid var(--b0);border-right:none;border-radius:var(--r) 0 0 var(--r);background:var(--s0);color:var(--t0);font-family:'Sarabun',sans-serif;font-size:14px;text-align:right;min-width:0;}
-.person-amt-inp:focus{outline:none;border-color:#2563EB;}
-.person-amt-suf{height:44px;padding:0 10px;border:1px solid var(--b0);border-radius:0 var(--r) var(--r) 0;background:var(--s1);color:var(--t2);font-size:13px;display:flex;align-items:center;flex-shrink:0;}
-.person-del{width:32px;height:40px;border:1px solid var(--b0);border-radius:var(--r);background:var(--s0);color:var(--t2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;transition:all .15s;}
-.person-del:hover{border-color:#dc2626;color:#dc2626;}
-/* result */
-.btn-calc{width:100%;height:46px;background:var(--ink);color:var(--inv);border:none;border-radius:var(--r);font-family:'Sarabun',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .15s;margin-top:4px;}
-.btn-calc:hover{opacity:.85;}
-.result-box{display:none;margin-top:10px;}
-.result-main{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:8px;}
-.result-top{padding:16px 18px 14px;border-bottom:1px solid var(--b0);text-align:center;}
-.result-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;}
-.result-num{font-family:'Noto Serif Thai',serif;font-size:44px;font-weight:700;color:var(--t0);line-height:1;}
-.result-unit{font-size:14px;color:var(--t2);margin-left:4px;}
-.result-sub{font-size:13px;color:var(--t2);margin-top:6px;}
-.result-body{padding:12px 18px;}
-.bd-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--b0);}
+
+.own-item-wrap{margin-top:4px;}
+.own-item-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+.add-person-btn{height:32px;padding:0 12px;border:1px dashed var(--b0);border-radius:8px;background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:12px;font-weight:600;color:#52504C;cursor:pointer;}
+.person-row{display:grid;grid-template-columns:1fr 90px auto 28px;gap:6px;margin-bottom:8px;align-items:center;}
+.person-row input{height:40px;border:1px solid var(--b0);border-radius:8px;background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:14px;color:#18181A;outline:none;padding:0 10px;min-width:0;}
+.person-row input:focus{border-color:#18181A;}
+.person-amt-suf{font-size:12px;color:#96938C;white-space:nowrap;}
+.person-del{width:28px;height:28px;border:none;background:#EFEFEC;border-radius:6px;color:#96938C;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+
+.ratio-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.ratio-btn{height:44px;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:600;color:#52504C;cursor:pointer;}
+.ratio-btn.on{background:#18181A;border-color:#18181A;color:#FFFFFF;}
+
+.btn-calc{width:100%;height:50px;margin-top:4px;background:#18181A;color:#FFFFFF;border:none;border-radius:var(--r-lg);font-family:'Sarabun',sans-serif;font-size:16px;font-weight:600;cursor:pointer;}
+.err-msg{display:none;margin-top:10px;font-size:13px;color:#DC2626;text-align:center;}
+.note-box{margin-top:10px;padding:12px 14px;background:#EFEFEC;border:1px solid var(--b0);border-radius:var(--r);font-size:12px;color:#96938C;line-height:1.6;text-align:center;}
+
+.result-box{display:none;margin-top:16px;}
+.result-hero{background:#18181A;border-radius:var(--r-lg);padding:20px 16px;text-align:center;margin-bottom:10px;}
+.result-hero-lbl{font-size:13px;color:#FFFFFF;opacity:.7;margin-bottom:8px;}
+.result-hero-val{font-family:'Noto Serif Thai',serif;font-size:36px;font-weight:700;color:#FFFFFF;line-height:1.3;}
+.result-hero-unit{font-size:14px;color:#FFFFFF;opacity:.7;margin-left:4px;}
+.result-hero-sub{font-size:12px;color:#FFFFFF;opacity:.6;margin-top:8px;}
+
+.person-results{display:flex;flex-direction:column;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}
+.person-result-row{display:flex;justify-content:space-between;align-items:center;padding:13px 14px;border-bottom:1px solid var(--b0);}
+.person-result-row:last-child{border-bottom:none;}
+.person-result-name{font-size:14px;color:#18181A;font-weight:500;}
+.person-result-amt{font-size:15px;color:#18181A;font-weight:700;font-family:'Noto Serif Thai',serif;}
+.person-result-sub{font-size:11px;color:#96938C;margin-top:2px;}
+
+.result-body{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;}
+.bd-row{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;border-bottom:1px solid var(--b0);font-size:14px;}
 .bd-row:last-child{border-bottom:none;}
-.bd-lbl{font-size:13px;color:var(--t1);}
-.bd-val{font-size:14px;font-weight:600;color:var(--t0);}
-.bd-val.tx{color:#dc2626;}
-[data-theme="dark"] .bd-val.tx{color:#f87171;}
-/* result per person cards */
-.person-results{display:flex;flex-direction:column;gap:6px;padding:12px 18px;}
-.person-result-row{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--s1);border-radius:var(--r);}
-.person-result-name{font-size:13px;font-weight:600;color:var(--t1);}
-.person-result-amt{font-size:16px;font-weight:700;color:var(--t0);}
-.faq-wrap{margin-top:28px;border-top:1px solid var(--b0);padding-top:24px;}
-.faq-h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--t0);margin-bottom:14px;}
+.bd-row.total{font-weight:600;background:#EFEFEC;}
+.bd-label{color:#52504C;}
+.bd-val{color:#18181A;font-weight:500;}
+.bd-val.tx{color:#DC2626;}
+
+.info-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.info-item{margin-bottom:16px;}
+.info-item:last-child{margin-bottom:0;}
+.info-title{font-size:14px;font-weight:600;color:#18181A;margin-bottom:6px;}
+.info-text{font-size:13px;color:#52504C;line-height:1.7;}
+
+.faq-wrap{margin-top:28px;}
+.faq-title{font-family:'Noto Serif Thai',serif;font-size:20px;font-weight:700;color:#18181A;margin-bottom:12px;}
 .faq-item{border:1px solid var(--b0);border-radius:var(--r);overflow:hidden;margin-bottom:8px;}
-.faq-q{width:100%;padding:13px 16px;background:var(--s0);border:none;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:var(--t0);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:background .15s;}
-.faq-q:hover{background:var(--s1);}
-.faq-q svg{width:14px;height:14px;stroke:var(--t2);stroke-width:2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .2s;}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px;background:#FFFFFF;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:#18181A;text-align:left;gap:12px;min-height:48px;}
+.faq-q svg{width:16px;height:16px;stroke:#96938C;stroke-width:2;fill:none;flex-shrink:0;transition:transform .2s;}
 .faq-q[aria-expanded="true"] svg{transform:rotate(180deg);}
-.faq-a{padding:0 16px;font-size:13px;color:var(--t1);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .25s ease,padding .25s ease;}
-.faq-a.open{max-height:300px;padding:0 16px 14px;}
-.related-wrap{margin-top:20px;border-top:1px solid var(--b0);padding-top:20px;}
-.related-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
-.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;}
-.related-card{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--s0);border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;color:var(--t0);transition:border-color .14s,background .14s;}
-.related-card:hover{border-color:var(--b1);background:var(--s1);}
-.related-ico{width:28px;height:28px;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.related-ico svg{width:12px;height:12px;stroke:var(--inv);stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.related-name{font-size:12px;font-weight:500;}
-footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}
-footer a{color:var(--t2);text-decoration:none;}
-footer a:hover{color:var(--t1);}
-@media(max-width:480px){
-  .page{padding-left:12px;padding-right:12px;}
-  .related-grid{grid-template-columns:1fr;}
-}
+.faq-a{max-height:0;overflow:hidden;font-size:14px;color:#52504C;line-height:1.7;transition:max-height .25s ease,padding .25s ease;padding:0 14px;background:#EFEFEC;}
+.faq-a.open{max-height:400px;padding:14px;}
+.faq-a strong{color:#18181A;}
+.related-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.related-title{font-size:11px;font-weight:600;color:#96938C;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.related-card{display:flex;align-items:center;gap:10px;padding:12px;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;}
+.related-ico{width:32px;height:32px;border-radius:8px;background:#18181A;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.related-ico svg{width:15px;height:15px;stroke:#FFFFFF;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.related-name{font-size:13px;font-weight:500;color:#18181A;}
+footer{border-top:1px solid var(--b0);padding:20px 16px;text-align:center;font-size:12px;color:#96938C;line-height:2;}
+footer a{color:#96938C;text-decoration:none;}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RPQNBN2DZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5RPQNBN2DZ');
+</script>
 </head>
 <body>
 <header role="banner">
   <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก">
-    <svg viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect width="30" height="30" rx="6" fill="var(--ink)"/><text x="3" y="22" font-family="Arial Black,sans-serif" font-size="19" font-weight="900" fill="var(--inv)">K</text><text x="13" y="24" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+x=</text></svg>
+    <svg class="logo-icon" viewBox="0 0 30 30" fill="none">
+      <rect width="30" height="30" rx="6" fill="#18181A"/>
+      <text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">K</text>
+      <text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="#FFFFFF">+×=</text>
+    </svg>
     <div class="logo-t"><span class="logo-th">คำนวณ</span><span class="logo-en">KAMNUAN</span></div>
   </a>
-  <div class="hdr-right">
-    <a class="back-btn" href="/"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
-    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" type="button" aria-label="เปลี่ยนโหมดสีเข้ม">
-      <svg id="iSun" style="display:none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-      <svg id="iMoon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
-  </div>
+  <a class="back-btn" href="/"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
 </header>
 
-<div class="ad-bar">
-  <ins class="adsbygoogle"
-    style="display:block;width:100%;max-width:728px;height:90px;"
-    data-ad-client="ca-pub-1063556443578237"
-    data-ad-slot="auto"
-    data-ad-format="horizontal"
-    data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-</div>
-
-<main class="page">
+<div class="page">
   <div class="page-hd">
     <h1>หารบิล</h1>
     <p>คำนวณว่าใครจ่ายเท่าไหร่ หารเท่ากัน หารตามสัดส่วน หรือมีของใครของมันก็ได้</p>
@@ -189,7 +156,7 @@ footer a:hover{color:var(--t1);}
 
   <div class="mode-tabs">
     <button class="m-tab on" id="tab0" onclick="setMode(0)" type="button">หารเท่ากัน</button>
-    <button class="m-tab" id="tab1" onclick="setMode(1)" type="button">หารตามสัดส่วน<br><span style="font-size:10px;opacity:.7;">สำหรับ 2 คน</span></button>
+    <button class="m-tab" id="tab1" onclick="setMode(1)" type="button">หารตามสัดส่วน<span>สำหรับ 2 คน</span></button>
   </div>
 
   <!-- Mode 0: หารเท่ากัน -->
@@ -210,10 +177,9 @@ footer a:hover{color:var(--t1);}
         </div>
       </div>
 
-      <!-- ของใครของมัน -->
       <div class="field">
         <div class="toggle-row" style="border-bottom:none;padding-bottom:0;">
-          <span class="toggle-lbl">ของใครของมัน <span style="font-size:11px;color:var(--t2);">— ใครสั่งอะไรเพิ่มเอง ออกเอง</span></span>
+          <span class="toggle-lbl">ของใครของมัน <span class="lbl-sub">ใครสั่งอะไรเพิ่มเอง ออกเอง</span></span>
           <label class="toggle">
             <input type="checkbox" id="ownToggle" onchange="toggleOwn()">
             <span class="toggle-track"></span>
@@ -225,19 +191,17 @@ footer a:hover{color:var(--t1);}
       <div id="ownSection" style="display:none;margin-bottom:14px;">
         <div class="own-item-wrap">
           <div class="own-item-header">
-            <span class="own-item-lbl" style="font-size:12px;color:var(--t2);">กรอกชื่อและยอดที่สั่งเอง</span>
+            <span class="lbl-sub">กรอกชื่อและยอดที่สั่งเอง</span>
             <button class="add-person-btn" onclick="addPerson()" type="button">+ เพิ่มคน</button>
           </div>
           <div id="personList"></div>
         </div>
       </div>
 
-
-
       <div class="field" style="margin-bottom:0;">
         <label class="lbl">อื่นๆ</label>
         <div class="toggle-row">
-          <span class="toggle-lbl">บวก VAT 7% <span style="font-size:11px;color:var(--t2);">(ถ้าบิลยังไม่รวม VAT)</span></span>
+          <span class="toggle-lbl">บวก VAT 7% <span class="lbl-sub">(ถ้าบิลยังไม่รวม VAT)</span></span>
           <label class="toggle">
             <input type="checkbox" id="vatToggle0">
             <span class="toggle-track"></span>
@@ -245,7 +209,7 @@ footer a:hover{color:var(--t1);}
           </label>
         </div>
         <div class="toggle-row">
-          <span class="toggle-lbl">ปัดขึ้นเป็นหลักสิบ (จ่ายง่ายกว่า)</span>
+          <span class="toggle-lbl">ปัดขึ้นเป็นหลักสิบ <span class="lbl-sub">(จ่ายง่ายกว่า)</span></span>
           <label class="toggle">
             <input type="checkbox" id="roundToggle0">
             <span class="toggle-track"></span>
@@ -254,22 +218,20 @@ footer a:hover{color:var(--t1);}
         </div>
       </div>
       <button class="btn-calc" onclick="calcMode0()" type="button">คำนวณ</button>
+      <div class="err-msg" id="err0"></div>
     </div></div>
 
     <div class="result-box" id="result0">
-      <div class="result-main">
-        <div class="result-top">
-          <div class="result-lbl">แต่ละคนจ่าย</div>
-          <div><span class="result-num" id="r0-per">–</span><span class="result-unit">บาท</span></div>
-          <div class="result-sub" id="r0-sub"></div>
-        </div>
-        <div id="r0-persons" class="person-results" style="display:none;border-top:1px solid var(--b0);"></div>
-        <div class="result-body">
-          <div class="bd-row"><span class="bd-lbl">ยอดบิล</span><span class="bd-val" id="r0-bill">–</span></div>
-          <div class="bd-row" id="r0-row-vat" style="display:none"><span class="bd-lbl">VAT 7%</span><span class="bd-val tx" id="r0-vat">–</span></div>
-          
-          <div class="bd-row"><span class="bd-lbl">รวมทั้งหมด</span><span class="bd-val" id="r0-total">–</span></div>
-        </div>
+      <div class="result-hero">
+        <div class="result-hero-lbl">แต่ละคนจ่าย</div>
+        <div><span class="result-hero-val" id="r0-per">—</span><span class="result-hero-unit">บาท</span></div>
+        <div class="result-hero-sub" id="r0-sub"></div>
+      </div>
+      <div class="person-results" id="r0-persons" style="display:none;"></div>
+      <div class="result-body">
+        <div class="bd-row"><span class="bd-label">ยอดบิล</span><span class="bd-val" id="r0-bill">—</span></div>
+        <div class="bd-row" id="r0-row-vat" style="display:none"><span class="bd-label">VAT 7%</span><span class="bd-val tx" id="r0-vat">—</span></div>
+        <div class="bd-row total"><span class="bd-label">รวมทั้งหมด</span><span class="bd-val" id="r0-total">—</span></div>
       </div>
     </div>
   </div>
@@ -287,19 +249,19 @@ footer a:hover{color:var(--t1);}
 
       <div class="field">
         <label class="lbl">เลือกสัดส่วน</label>
-        <input type="hidden" id="ratio1" value="50"><input type="hidden" id="ratio2" value="50"><div class="ratio-row">
+        <input type="hidden" id="ratio1" value="50"><input type="hidden" id="ratio2" value="50">
+        <div class="ratio-row">
           <button class="ratio-btn on" id="r5050" onclick="setRatio(50,50,this)" type="button">50 / 50</button>
           <button class="ratio-btn" id="r6040" onclick="setRatio(60,40,this)" type="button">60 / 40</button>
           <button class="ratio-btn" id="r7030" onclick="setRatio(70,30,this)" type="button">70 / 30</button>
           <button class="ratio-btn" id="r8020" onclick="setRatio(80,20,this)" type="button">80 / 20</button>
         </div>
-
       </div>
 
       <div class="field" style="margin-bottom:0;">
         <label class="lbl">อื่นๆ</label>
         <div class="toggle-row">
-          <span class="toggle-lbl">บวก VAT 7% <span style="font-size:11px;color:var(--t2);">(ถ้าบิลยังไม่รวม VAT)</span></span>
+          <span class="toggle-lbl">บวก VAT 7% <span class="lbl-sub">(ถ้าบิลยังไม่รวม VAT)</span></span>
           <label class="toggle">
             <input type="checkbox" id="vatToggle1">
             <span class="toggle-track"></span>
@@ -316,94 +278,93 @@ footer a:hover{color:var(--t1);}
         </div>
       </div>
       <button class="btn-calc" onclick="calcMode1()" type="button">คำนวณ</button>
+      <div class="err-msg" id="err1"></div>
     </div></div>
 
     <div class="result-box" id="result1">
-      <div class="result-main">
-        <div class="result-top">
-          <div class="result-lbl">ยอดรวมทั้งหมด</div>
-          <div><span class="result-num" id="r1-total">–</span><span class="result-unit">บาท</span></div>
+      <div class="result-hero">
+        <div class="result-hero-lbl">ยอดรวมทั้งหมด</div>
+        <div><span class="result-hero-val" id="r1-total">—</span><span class="result-hero-unit">บาท</span></div>
+      </div>
+      <div class="person-results">
+        <div class="person-result-row">
+          <span class="person-result-name">คนที่ 1 (<span id="r1-pct1">—</span>%)</span>
+          <span class="person-result-amt" id="r1-amt1">—</span>
         </div>
-        <div class="person-results" style="border-top:1px solid var(--b0);">
-          <div class="person-result-row">
-            <span class="person-result-name">คนที่ 1 (<span id="r1-pct1">–</span>%)</span>
-            <span class="person-result-amt" id="r1-amt1">–</span>
-          </div>
-          <div class="person-result-row">
-            <span class="person-result-name">คนที่ 2 (<span id="r1-pct2">–</span>%)</span>
-            <span class="person-result-amt" id="r1-amt2">–</span>
-          </div>
+        <div class="person-result-row">
+          <span class="person-result-name">คนที่ 2 (<span id="r1-pct2">—</span>%)</span>
+          <span class="person-result-amt" id="r1-amt2">—</span>
         </div>
-        <div class="result-body">
-          <div class="bd-row"><span class="bd-lbl">ยอดบิล</span><span class="bd-val" id="r1-bill">–</span></div>
-          <div class="bd-row" id="r1-row-vat" style="display:none"><span class="bd-lbl">VAT 7%</span><span class="bd-val tx" id="r1-vat">–</span></div>
-          <div class="bd-row"><span class="bd-lbl">รวมทั้งหมด</span><span class="bd-val" id="r1-total2">–</span></div>
-        </div>
+      </div>
+      <div class="result-body">
+        <div class="bd-row"><span class="bd-label">ยอดบิล</span><span class="bd-val" id="r1-bill">—</span></div>
+        <div class="bd-row" id="r1-row-vat" style="display:none"><span class="bd-label">VAT 7%</span><span class="bd-val tx" id="r1-vat">—</span></div>
+        <div class="bd-row total"><span class="bd-label">รวมทั้งหมด</span><span class="bd-val" id="r1-total2">—</span></div>
       </div>
     </div>
   </div>
 
   <div class="faq-wrap">
-    <h2 class="faq-h2">คำถามที่พบบ่อย</h2>
+    <h2 class="faq-title">คำถามที่พบบ่อย</h2>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">กินไม่เท่ากัน ต้องหารเท่ากันไหม?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">ไม่จำเป็นครับ ถ้ารู้สึกว่าไม่ยุติธรรมก็ใช้โหมด "หารตามสัดส่วน" ได้เลย หรือถ้าใครสั่งของเพิ่มเองก็กดเปิด "ของใครของมัน" แล้วใส่ยอดที่แต่ละคนสั่งเพิ่มเอง ที่เหลือค่อยหารกัน</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">กินไม่เท่ากัน ต้องหารเท่ากันไหม<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ไม่จำเป็นครับ ถ้ารู้สึกว่าไม่ยุติธรรมก็ใช้โหมด <strong>หารตามสัดส่วน</strong> ได้เลย หรือถ้าใครสั่งของเพิ่มเองก็เปิด <strong>ของใครของมัน</strong> แล้วใส่ยอดที่แต่ละคนสั่งเพิ่มเอง ที่เหลือค่อยหารกัน</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">VAT ในบิลคืออะไร ต้องติ้กไหม?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">VAT คือภาษีมูลค่าเพิ่ม 7% ถ้ากรอกยอดจากบิลที่ถืออยู่ในมือ ส่วนใหญ่บวม VAT มาแล้ว ไม่ต้องติ้ก ติ้กเฉพาะกรณีที่รู้ราคาก่อน VAT แล้วอยากรู้ว่าจะต้องจ่ายเท่าไหร่รวม VAT</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">VAT ในบิลคืออะไร ต้องติ้กไหม<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">VAT คือภาษีมูลค่าเพิ่ม 7% ถ้ากรอกยอดจากบิลที่ถืออยู่ในมือ ส่วนใหญ่<strong>บวก VAT มาแล้ว ไม่ต้องติ้ก</strong> ติ้กเฉพาะกรณีที่รู้ราคาก่อน VAT แล้วอยากรู้ว่าจะต้องจ่ายเท่าไหร่รวม VAT</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ปัดขึ้นเป็นหลักสิบดีไหม?<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">ถ้าจ่ายเงินสดแนะนำปัดขึ้น จะจ่ายสะดวกกว่า ไม่ต้องทอน แต่ถ้าโอนเงินไม่ต้องปัด จ่ายยอดจริงได้เลย</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ร้านอาหารในไทยคิด VAT ไหม<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ร้านอาหารที่มีรายได้เกิน <strong>1.8 ล้านบาทต่อปี</strong> ต้องจดทะเบียน VAT และคิด 7% ร้านเล็กหรือรถเข็นส่วนใหญ่ไม่คิด VAT</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">หารแบบ 50/50 หรือ 60/40 คืออะไร<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">หารตามสัดส่วนคือการแบ่งบิลไม่เท่ากัน เช่น 60/40 หมายความว่าคนแรกออก <strong>60%</strong> คนที่สองออก <strong>40%</strong> ใช้บ่อยในกรณีที่รู้สึกว่าคนนึงกินมากกว่าหรือมีกำลังจ่ายมากกว่า</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ทำไมต้องปัดขึ้นเป็นหลักสิบ<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">การปัดขึ้นเป็นหลักสิบช่วยให้จ่ายเงินสดง่ายขึ้น ไม่ต้องหาเศษสตางค์มาทอน เช่น คนละ 287.50 บาท ปัดเป็น <strong>290 บาท</strong> เพื่อนที่จ่ายมากกว่าเศษเล็กน้อยมักไม่ติดใจ</div>
+    </div>
+  </div>
+
+  <div class="info-wrap">
+    <div class="info-item">
+      <div class="info-title">เลือกโหมดไหนดี</div>
+      <div class="info-text"><strong>หารเท่ากัน</strong> เหมาะกับกลุ่มที่กินใกล้เคียงกันและไม่อยากคิดเลขซับซ้อน เปิด "ของใครของมัน" เพิ่มได้ถ้ามีคนสั่งของแพงกว่าคนอื่นชัดเจน <strong>หารตามสัดส่วน</strong> เหมาะกับการแบ่ง 2 คนที่กำลังจ่ายต่างกัน เช่น มื้อเดทที่อยากให้อีกฝ่ายออกน้อยกว่า</div>
+    </div>
+    <div class="info-item">
+      <div class="info-title">ของใครของมันคำนวณยังไง</div>
+      <div class="info-text">ระบบจะหักยอดที่แต่ละคนสั่งเองออกจากบิลรวมก่อน เหลือเป็น "ส่วนกลาง" แล้วค่อยหารส่วนกลางนั้นเท่าๆกันให้ทุกคน คนที่สั่งของเพิ่มเองจะจ่ายส่วนกลาง + ของตัวเอง ส่วนคนที่ไม่ได้สั่งอะไรเพิ่มจะจ่ายแค่ส่วนกลางเท่านั้น</div>
     </div>
   </div>
 
   <div class="related-wrap">
-    <div class="related-lbl">เครื่องมือที่เกี่ยวข้อง</div>
+    <div class="related-title">เครื่องมือที่เกี่ยวข้อง</div>
     <div class="related-grid">
-      <a class="related-card" href="/kamnuanpercent/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
-        <span class="related-name">คิดเปอร์เซ็นต์</span>
-      </a>
-      <a class="related-card" href="/kamnuanvat/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
-        <span class="related-name">คำนวณ VAT</span>
-      </a>
-      <a class="related-card" href="/kamnuansuanlod/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <span class="related-name">คิดส่วนลด</span>
-      </a>
-      <a class="related-card" href="/kamnuancurrency/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-        <span class="related-name">แปลงสกุลเงิน</span>
-      </a>
+      <a class="related-card" href="/kamnuanvat/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><span class="related-name">คำนวณ VAT</span></a>
+      <a class="related-card" href="/kamnuanpercent/"><div class="related-ico"><svg viewBox="0 0 24 24"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div><span class="related-name">คิดเปอร์เซ็นต์</span></a>
+      <a class="related-card" href="/kamnuansuanlod/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></div><span class="related-name">คิดส่วนลด</span></a>
+      <a class="related-card" href="/kamnuanngoenduean/"><div class="related-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><span class="related-name">คำนวณเงินเดือนสุทธิ</span></a>
     </div>
   </div>
-</main>
+</div>
 
 <footer role="contentinfo">
-  <p>© 2569 คำนวณ <a href="/">หน้าหลัก</a> <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p>
+  <p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/about.html">เกี่ยวกับเรา</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="/terms.html">เงื่อนไข</a> · <a href="/contact.html">ติดต่อ</a></p>
 </footer>
 
 <script>
-/* THEME */
-function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
-function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='dark'?'none':'block';localStorage.setItem('theme',t);}
-function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
-initTheme();
+function toggleFaq(btn){const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));btn.nextElementSibling.classList.toggle('open',!e);}
+function fmt(n){return n.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function fmtI(n){return Math.round(n).toLocaleString('th-TH');}
 
-/* MODE */
 function setMode(m){
   document.getElementById('tab0').classList.toggle('on',m===0);
   document.getElementById('tab1').classList.toggle('on',m===1);
-  document.getElementById('m0').style.display=m===0?'block':'none';
-  document.getElementById('m1').style.display=m===1?'block':'none';
+  document.getElementById('m0').style.display=m===0?'':'none';
+  document.getElementById('m1').style.display=m===1?'':'none';
 }
-
-/* FORMAT */
-function fmt(n){return n.toLocaleString('th-TH',{minimumFractionDigits:2,maximumFractionDigits:2});}
-function fmtI(n){return Math.round(n).toLocaleString('th-TH');}
 
 /* ของใครของมัน */
 let personCount=0;
@@ -432,12 +393,12 @@ function removePerson(id){
   if(el) el.remove();
 }
 
-/* MODE 0 CALC */
 function calcMode0(){
   const bill=parseFloat(document.getElementById('bill0').value);
   const people=parseInt(document.getElementById('people0').value);
-  if(!bill||bill<=0){alert('กรุณากรอกยอดบิล');return;}
-  if(!people||people<1){alert('กรุณากรอกจำนวนคน');return;}
+  const err=document.getElementById('err0');
+  if(!bill||bill<=0){err.textContent='กรุณากรอกยอดบิล';err.style.display='block';return;}
+  if(!people||people<1){err.textContent='กรุณากรอกจำนวนคน';err.style.display='block';return;}
 
   const withVat=document.getElementById('vatToggle0').checked;
   const withRound=document.getElementById('roundToggle0').checked;
@@ -445,7 +406,6 @@ function calcMode0(){
   const vatAmt=withVat?bill*0.07:0;
   let total=bill+vatAmt;
 
-  // ของใครของมัน
   const ownOn=document.getElementById('ownToggle').checked;
   let ownTotal=0;
   let persons=[];
@@ -454,14 +414,15 @@ function calcMode0(){
     rows.forEach(row=>{
       const name=row.querySelector('.person-name-inp').value.trim();
       const amt=parseFloat(row.querySelector('.person-amt-inp').value)||0;
-      if(amt<=0) return; // skip แถวที่ไม่มียอดเงิน
+      if(amt<=0) return;
       persons.push({name:name||'ไม่ระบุชื่อ', amt});
       ownTotal+=amt;
     });
   }
 
   const sharedBill=total-ownTotal;
-  if(sharedBill<0){alert('ยอดที่สั่งเองรวมกันมากกว่ายอดบิล');return;}
+  if(sharedBill<0){err.textContent='ยอดที่สั่งเองรวมกันมากกว่ายอดบิล';err.style.display='block';return;}
+  err.style.display='none';
   const sharedPerPerson=sharedBill/people;
 
   let perPerson=sharedPerPerson;
@@ -477,12 +438,11 @@ function calcMode0(){
   document.getElementById('r0-row-vat').style.display=withVat?'flex':'none';
   document.getElementById('r0-vat').textContent=fmt(vatAmt)+' บาท';
 
-
-  // แสดงรายคน ถ้ามีของใครของมัน
   const personsEl=document.getElementById('r0-persons');
   if(ownOn&&persons.length>0){
     personsEl.style.display='flex';
-    personsEl.innerHTML='<div style="font-size:12px;color:var(--t2);padding:0 0 8px;">สรุปแต่ละคน</div>';
+    personsEl.style.flexDirection='column';
+    personsEl.innerHTML='';
     persons.forEach(p=>{
       const total_p=p.amt+perPerson;
       const rounded=withRound?Math.ceil(total_p/10)*10:total_p;
@@ -496,10 +456,9 @@ function calcMode0(){
           <span class="person-result-name">${p.name}</span>
           <span class="person-result-amt">${withRound?fmtI(rounded):fmt(total_p)} บาท</span>
         </div>
-        <div style="font-size:11px;color:var(--t2);">ส่วนกลาง ${fmt(perPerson)} + ของตัวเอง ${fmt(p.amt)} บาท</div>`;
+        <div class="person-result-sub">ส่วนกลาง ${fmt(perPerson)} + ของตัวเอง ${fmt(p.amt)} บาท</div>`;
       personsEl.appendChild(div);
     });
-    // คนที่ไม่มีของตัวเอง
     const noOwn=people-persons.length;
     if(noOwn>0){
       const div=document.createElement('div');
@@ -516,7 +475,6 @@ function calcMode0(){
   requestAnimationFrame(()=>box.scrollIntoView({behavior:'smooth',block:'nearest'}));
 }
 
-/* MODE 1: สัดส่วน */
 let ratio=[50,50];
 function setRatio(a,b,btn){
   ratio=[a,b];
@@ -527,9 +485,11 @@ function setRatio(a,b,btn){
 }
 function calcMode1(){
   const bill=parseFloat(document.getElementById('bill1').value);
-  if(!bill||bill<=0){alert('กรุณากรอกยอดบิล');return;}
+  const err=document.getElementById('err1');
+  if(!bill||bill<=0){err.textContent='กรุณากรอกยอดบิล';err.style.display='block';return;}
   const a=ratio[0], b=ratio[1];
-  if(a+b<=0){alert('กรุณากำหนดสัดส่วน');return;}
+  if(a+b<=0){err.textContent='กรุณากำหนดสัดส่วน';err.style.display='block';return;}
+  err.style.display='none';
   const withVat=document.getElementById('vatToggle1').checked;
   const withRound=document.getElementById('roundToggle1').checked;
   const vatAmt=withVat?bill*0.07:0;
@@ -552,13 +512,6 @@ function calcMode1(){
   const box=document.getElementById('result1');
   box.style.display='block';
   requestAnimationFrame(()=>box.scrollIntoView({behavior:'smooth',block:'nearest'}));
-}
-
-/* FAQ */
-function toggleFaq(btn){
-  const exp=btn.getAttribute('aria-expanded')==='true';
-  btn.setAttribute('aria-expanded',String(!exp));
-  btn.nextElementSibling.classList.toggle('open',!exp);
 }
 </script>
 </body>
